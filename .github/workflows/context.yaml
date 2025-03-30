@@ -1,0 +1,30 @@
+name: Context
+
+on:
+  workflow_dispatch
+
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+        # - run: echo "Action ${{ github.action }}"
+        # - run: echo "Action_Path ${{ github.action_path }}"
+        # - run: echo "Action_Ref ${{ github.action_ref }}"
+        # - run: echo "Action_Repository ${{ github.action_repository }}"
+        # - run: echo "Action_Status ${{ github.action_status }}"
+        # - run: echo "Actor ${{ github.actor }}"
+        # - run: echo "Actor_id ${{ github.actor_id }}"
+        # - run: echo "Api_Url ${{ github.api_url }}"
+        # - run: echo "Base_Ref ${{ github.base_ref }}"
+        # - run: echo "Env ${{ github.env }}"
+        - run: echo "Context ${{ toJSON(github) }}"
+        # - run: echo "Event_Name ${{ github.event_name }}"
+        # - run: echo "Event_Path ${{ github.event_path }}"
+        # - run: echo "Graphql_Url ${{ github.graphql_url }}"
+        # - run: echo "Head_Ref ${{ github.head_ref }}"
+        # - run: echo "Job ${{ github.job }}"
+        # - run: echo "path ${{ github.path }}"
+        # - run: echo "Repository ${{ github.repository }}"
+        # - run: echo "Repository_Id ${{ github.repository_id }}"
+
+
